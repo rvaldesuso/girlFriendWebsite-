@@ -3,6 +3,44 @@
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+// Casual code gate for the static GitHub Pages site.
+// The code itself is not stored here; only its SHA-256 hash is compared.
+const ACCESS_HASH = '68ee0e07468f4e6ecb8af135ed7bac0cbc79a7f817086518e96a04099ecc6f04';
+const accessGate = document.querySelector('#accessGate');
+const accessForm = document.querySelector('#accessForm');
+const accessCode = document.querySelector('#accessCode');
+const gateError = document.querySelector('#gateError');
+
+function unlockScrapbook() {
+  document.documentElement.classList.remove('locked');
+  accessGate.classList.add('hidden');
+  window.setTimeout(() => accessGate.remove(), 500);
+}
+
+if (sessionStorage.getItem('scrapbookAccess') === ACCESS_HASH) {
+  unlockScrapbook();
+}
+
+async function hashCode(value) {
+  const bytes = new TextEncoder().encode(value);
+  const digest = await crypto.subtle.digest('SHA-256', bytes);
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+}
+
+accessForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const submittedHash = await hashCode(accessCode.value);
+  if (submittedHash === ACCESS_HASH) {
+    sessionStorage.setItem('scrapbookAccess', ACCESS_HASH);
+    gateError.textContent = 'correct!!! opening your scrapbook...';
+    unlockScrapbook();
+    return;
+  }
+  gateError.textContent = 'nope — ask Ronan for the secret code ♡';
+  accessCode.value = '';
+  accessCode.focus();
+});
+
 // Reveal scrapbook pieces as they enter the page.
 const revealItems = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && !reducedMotion) {

@@ -5,14 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#78966f">
   <meta name="description" content="A handmade scrapbook for Megan, from Ronan.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
   <!-- CUSTOMIZE: Change Megan and Ronan here if needed. -->
   <title>Ronan's scrapbook for Megan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cherry+Bomb+One&family=DM+Mono:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('locked');</script>
 </head>
 <body>
+  <div class="access-gate" id="accessGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="access-gate__card">
+      <span class="gate-tape" aria-hidden="true"></span>
+      <p class="gate-kicker">R + M · private scrapbook</p>
+      <div class="gate-camera" aria-hidden="true">▣<i>◉</i></div>
+      <h1 id="gateTitle">hey, is this<br><em>Megan?</em></h1>
+      <p>Ronan left you a little corner of the internet. Enter the secret code to open it.</p>
+      <form id="accessForm">
+        <label for="accessCode">secret code</label>
+        <div class="gate-input-row">
+          <input id="accessCode" name="code" type="password" autocomplete="current-password" spellcheck="false" required autofocus>
+          <button type="submit">open it ♡</button>
+        </div>
+        <p class="gate-error" id="gateError" aria-live="polite"></p>
+      </form>
+      <small>hint: ask Ronan, not Jada</small>
+      <span class="gate-doodle gate-doodle--one" aria-hidden="true">♡</span>
+      <span class="gate-doodle gate-doodle--two" aria-hidden="true">✿</span>
+    </div>
+  </div>
   <div class="paper-noise" aria-hidden="true"></div>
   <div class="cursor-flash" id="cursorFlash" aria-hidden="true">✦</div>
 
