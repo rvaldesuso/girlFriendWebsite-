@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#78966f">
+  <meta name="description" content="A handmade scrapbook for Megan, from Ronan.">
+  <!-- CUSTOMIZE: Change Megan and Ronan here if needed. -->
+  <title>Ronan's scrapbook for Megan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cherry+Bomb+One&family=DM+Mono:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+  <div class="cursor-flash" id="cursorFlash" aria-hidden="true">✦</div>
+
+  <header class="topbar">
+    <a class="logo" href="#top"><span>R</span> + <span>M</span></a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks">menu ☻</button>
+    <nav class="nav-links" id="navLinks" aria-label="Scrapbook sections">
+      <a href="#love-list">why you</a>
+      <a href="#lens">your lens</a>
+      <a href="#moments">our film</a>
+      <a href="#note">a note</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero scrapbook-page">
+      <div class="hero__burst" aria-hidden="true"></div>
+      <div class="doodle doodle--heart" aria-hidden="true">♡</div>
+      <div class="doodle doodle--flower" aria-hidden="true">✿</div>
+      <div class="doodle doodle--camera" aria-hidden="true">▣<small>◉</small></div>
+      <div class="doodle doodle--star" aria-hidden="true">✦</div>
+
+      <div class="hero__copy reveal">
+        <p class="label sticker sticker--peach">a very important website!!!</p>
+        <!-- CUSTOMIZE HER NAME: Replace Megan below. -->
+        <h1>for my<br><span>girl, Megan!</span></h1>
+        <p class="hero__subtitle">two skate guards + one Denny's date + a whole lot of green</p>
+        <a class="scribble-button" href="#love-list">open the scrapbook <span>↓</span></a>
+      </div>
+
+      <div class="hero__photos reveal">
+        <!-- OUR PHOTO: Change the src to another file in photos/us whenever you want. -->
+        <figure class="polaroid polaroid--hero real-photo" data-photo="our favorite photo">
+          <img class="scrapbook-img" src="photos/us/IMG_8860.jpg" alt="Ronan and Megan sitting together with a green guitar">
+          <figcaption>me + my best friend &lt;3</figcaption>
+        </figure>
+        <div class="film-tag">FAIRFAX<br>06·19·25</div>
+        <span class="tape tape--one" aria-hidden="true"></span>
+        <span class="tape tape--two" aria-hidden="true"></span>
+      </div>
+
+      <div class="hero__ticker" aria-label="Things we love">
+        <div>FIGURE SKATES ✦ HOCKEY SKATES ✦ CHIEF SQUISHY NECK ✦ WALL·E + EVE ✦ DRUGDLE ✦ GREEN GREEN GREEN ✦ </div>
+      </div>
+    </section>
+
+    <section class="love-list scrapbook-page" id="love-list">
+      <header class="section-title reveal">
+        <span class="kicker">tiny list, giant feelings</span>
+        <h2>stuff i <em>love</em><br>about you</h2>
+        <span class="title-doodle" aria-hidden="true">↘ ♡</span>
+      </header>
+
+      <div class="love-grid">
+        <!-- CUSTOMIZE: Replace any card with another reason or inside joke. -->
+        <article class="love-card love-card--pink reveal"><b>01</b><span class="card-icon">◉</span><h3>your pretty eyes</h3><p>The first thing I noticed. Still one of my favorite things to look at.</p></article>
+        <article class="love-card love-card--cream reveal"><b>02</b><span class="card-icon">✿</span><h3>your big nerd brain</h3><p>Fruit science, color perception, Drugdle—regular conversation never stood a chance.</p></article>
+        <article class="love-card love-card--lavender reveal"><b>03</b><span class="card-icon">〰</span><h3>hair scratches</h3><p>Instant five-star experience. No notes. Please continue forever.</p></article>
+        <article class="love-card love-card--olive reveal"><b>04</b><span class="card-icon">⛸</span><h3>you on the ice</h3><p>You are so elegant. I am very lucky my cute coworker happened to be a figure skater.</p></article>
+        <article class="love-card love-card--mint reveal"><b>05</b><span class="card-icon">Rx</span><h3>future pharmacist</h3><p>Hospital pharmacist Megan starts loading this fall. Daily Drugdle streak included.</p></article>
+        <article class="love-card love-card--peach reveal"><b>06</b><span class="card-icon">☻</span><h3>you like the squish</h3><p>My tummy appreciates the recognition. It likes you too.</p></article>
+        <article class="love-card love-card--wide reveal"><b>07</b><span class="card-icon">◎</span><h3>your geography brain</h3><p>You are ridiculously good at geography. When we finally make it to Spain and Italy, you are obviously in charge of making sure we know where we are.</p></article>
+      </div>
+      <p class="margin-note margin-note--right">also she calls me handsome!!! →</p>
+    </section>
+
+    <section class="through-lens scrapbook-page" id="lens">
+      <header class="section-title section-title--light reveal">
+        <span class="kicker">photos by the coolest girl i know</span>
+        <h2>through<br><em>her lens</em></h2>
+      </header>
+
+      <div class="camera-settings reveal"><span>MEGAN CAM</span><span>ISO 400</span><span>f/2.8</span><span>♡ MODE</span></div>
+      <div class="contact-sheet reveal">
+        <!-- HER PHOTOGRAPHY: These use uploaded photos for now; swap in photos she took when available. -->
+        <figure class="contact-frame real-photo"><img class="scrapbook-img" src="photos/us/photo.png" alt="A mountain town and a white cat photographed by Megan"><figcaption>photo by Megan ♡</figcaption></figure>
+        <figure class="contact-frame real-photo"><img class="scrapbook-img" src="photos/us/IMG_1381.jpg" alt="Megan smiling on an ice rink"><figcaption>back on the ice</figcaption></figure>
+        <figure class="contact-frame real-photo"><img class="scrapbook-img" src="photos/us/anv.jpg" alt="Megan smiling at the anniversary dinner"><figcaption>our anniversary dinner ♡</figcaption></figure>
+        <figure class="contact-frame real-photo"><img class="scrapbook-img" src="photos/us/4526179349044401123.jpg" alt="Ronan and Megan laughing together on a couch"><figcaption>caught laughing</figcaption></figure>
+        <figure class="contact-frame real-photo"><img class="scrapbook-img" src="photos/us/IMG_1799.jpg" alt="A close selfie of Megan and Ronan"><figcaption>flash on!</figcaption></figure>
+        <figure class="contact-frame real-photo"><img class="scrapbook-img" src="photos/us/IMG_8834.jpg" alt="Megan sitting beside Ronan while he plays guitar"><figcaption>very us-coded</figcaption></figure>
+      </div>
+      <div class="film-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <button class="develop-button" id="developButton" type="button">develop the roll <span>⚡</span></button>
+      <p class="develop-status" id="developStatus" aria-live="polite">6 tiny moments waiting in the darkroom...</p>
+    </section>
+
+    <section class="reminds scrapbook-page" id="reminds">
+      <header class="section-title reveal">
+        <span class="kicker">a highly scientific mood board</span>
+        <h2>stuff that says<br><em>“that's so Megan”</em></h2>
+      </header>
+
+      <div class="reminds-collage">
+        <!-- FAVORITE THINGS: Swap placeholders for photos and edit handwritten captions. -->
+        <figure class="scrap scrap--jada reveal real-photo"><img class="scrapbook-img scrap-img" src="photos/jada/jada 2.jpg" alt="Jada looking up while standing in the leaves"><figcaption>Chief Squishy Neck, jealous of hugs</figcaption><span class="tape"></span></figure>
+        <!-- Chicken Alfredo photo: Wikimedia Commons, File:Chicken-alfredo.jpg -->
+        <figure class="scrap scrap--food reveal real-photo"><img class="scrapbook-img scrap-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chicken-alfredo.jpg/1280px-Chicken-alfredo.jpg" alt="A plate of chicken Alfredo pasta"><figcaption>chicken Alfredo ♡</figcaption></figure>
+        <div class="scrap scrap--green reveal"><span class="paint green-one"></span><span class="paint green-two"></span><span class="paint green-three"></span><p>favorite colors:<br><b>green,<br>green &amp;<br>green</b></p></div>
+        <!-- F/A-18 photo: Wikimedia Commons, File:F-A-18 Hornet with condensation clouds from shockwaves.jpg -->
+        <figure class="scrap scrap--plane reveal real-photo"><img class="scrapbook-img scrap-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/F-A-18_Hornet_with_condensation_clouds_from_shockwaves.jpg/1280px-F-A-18_Hornet_with_condensation_clouds_from_shockwaves.jpg" alt="An F/A-18 Hornet flying with condensation clouds"><figcaption>for your dad ✈</figcaption></figure>
+        <!-- Screenshot captured from the official Drugdle by PharmaNUS game. -->
+        <figure class="scrap scrap--game reveal real-photo"><img class="scrapbook-img scrap-img" src="photos/inspiration/drugdle.png" alt="The Drugdle by PharmaNUS daily medicine-name game"><figcaption>daily Drugdle = certified nerd material</figcaption></figure>
+        <div class="scrap scrap--quote reveal"><p>“pretty much all vegetables are fruits”</p><small>— fruit scientist Megan</small></div>
+        <div class="scrap scrap--shows reveal"><b>WATCH LIST</b><p>Pantheon<br>Project Hail Mary<br>WALL·E forever</p><span>★ ★ ★ ★ ★</span></div>
+      </div>
+    </section>
+
+    <section class="moments scrapbook-page" id="moments">
+      <header class="section-title reveal">
+        <span class="kicker">the Ronan + Megan archives</span>
+        <h2>our little<br><em>moments</em></h2>
+      </header>
+
+      <div class="memory-reel">
+        <!-- LITTLE MEMORIES: Edit dates, captions, and photo placeholders below. -->
+        <article class="memory-slide reveal">
+          <div class="memory-number">001</div>
+          <figure class="mini-polaroid real-photo"><img class="scrapbook-img" src="photos/us/IMG_1381.jpg" alt="Megan standing on the ice"><figcaption>back where it started</figcaption></figure>
+          <div class="memory-copy"><time>SUMMER 2025 · FAIRFAX</time><h3>“are you new?”</h3><p>You were back from school. We were both skate guards. We kept chatting behind the desk instead of doing whatever skate guards were meant to be doing.</p></div>
+        </article>
+        <article class="memory-slide reveal">
+          <div class="memory-number">002</div>
+          <!-- Vsauce photo: Wikimedia Commons, File:Vsauce.jpg -->
+          <figure class="mini-polaroid real-photo"><img class="scrapbook-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Vsauce.jpg/1280px-Vsauce.jpg" alt="Michael Stevens from Vsauce"><figcaption>hey, Vsauce. Eddie here.</figcaption></figure>
+          <div class="memory-copy"><time>OUR FIRST DATE · 2 A.M.</time><h3>brisket + Vsauce</h3><p>I finally asked you to Denny's. Eddie caught the vibe and left. We talked about color perception until 2 a.m., and I knew I wanted to see you again.</p></div>
+        </article>
+        <article class="memory-slide reveal">
+          <div class="memory-number">003</div>
+          <figure class="mini-polaroid real-photo"><img class="scrapbook-img" src="photos/us/IMG_1262.jpg" alt="Megan holding a small Lego robot"><figcaption>EVE's tiny relative</figcaption></figure>
+          <div class="memory-copy"><time>WALL·E + EVE</time><h3>romance vs. Lego</h3><p>I built WALL·E. You built EVE. You tried to make out with me and I was too focused on the Lego. The robots now live at our separate houses, like us in tiny robot form.</p></div>
+        </article>
+        <article class="memory-slide reveal">
+          <div class="memory-number">004</div>
+          <figure class="mini-polaroid real-photo"><img class="scrapbook-img" src="photos/us/monumnet.jpg" alt="Ronan and Megan posing together beneath the Washington Monument after their anniversary dinner"><figcaption>after dinner at the monument</figcaption></figure>
+          <div class="memory-copy"><time>ONE YEAR · WASHINGTON, D.C.</time><h3>classy anniversary pics</h3><p>We celebrated one year by taking photos with the Washington Monument posed as your penis. Beautiful. Romantic. Historically important.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="favorites-wall scrapbook-page" id="favorites">
+      <header class="section-title reveal">
+        <span class="kicker">cut, paste, keep forever</span>
+        <h2>your favorite<br><em>little things</em></h2>
+      </header>
+      <div class="sticker-wall reveal">
+        <!-- PHOTO PLACEHOLDERS: favorite flower, food, place, hobby, pet, and random object. -->
+        <!-- White tulips: Wikimedia Commons, File:White tulips.jpg -->
+        <div class="sticker-photo sticker-photo--flower sticker-photo--image"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/White_tulips.jpg" alt="White tulips"><span>favorite flowers: white tulips</span></div>
+        <div class="sticker-photo sticker-photo--food sticker-photo--image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chicken-alfredo.jpg/1280px-Chicken-alfredo.jpg" alt="Chicken Alfredo"><span>chicken Alfredo</span></div>
+        <div class="sticker-photo sticker-photo--hobby"><span>her<br>photography</span><b>▣</b></div>
+        <div class="sticker-photo sticker-photo--pet sticker-photo--image"><img src="photos/jada/jada.jpg" alt="Jada relaxing upside down"><span>Jada being Jada</span></div>
+        <div class="sticker-photo sticker-photo--random sticker-photo--image"><img src="photos/us/monumnet.jpg" alt="Ronan and Megan's playful Washington Monument anniversary photo"><span>something very Megan</span></div>
+        <p class="wall-scrawl">things worth taking pictures of ↗</p>
+      </div>
+    </section>
+
+    <section class="playlist scrapbook-page" id="playlist">
+      <div class="playlist__intro reveal">
+        <span class="kicker">press play for maximum yearning</span>
+        <h2>megan<br><em>radio</em></h2>
+        <p>Dark, dreamy, dramatic, perfect. Tap an album to put it “on.”</p>
+        <div class="now-playing"><i id="playLight"></i><span id="nowPlaying">choose a record...</span></div>
+      </div>
+      <div class="album-stack reveal" aria-label="Megan's record shelf">
+        <!-- FAVORITE SONGS / ALBUMS: Replace covers, labels, and data-album values. -->
+        <button class="album" type="button" data-album="The Black Parade — My Chemical Romance"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7e/ac/69/7eac6998-7fa4-f1ab-9601-e8b791c736fa/mzi.fbpszunc.jpg/600x600bb.jpg" alt="The Black Parade album cover"><span>MCR</span></button>
+        <button class="album" type="button" data-album="The Queen Is Dead — The Smiths"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1a/e8/70/1ae870c3-b402-096b-c4c4-8022af5a2ed9/745099189662.jpg/600x600bb.jpg" alt="The Queen Is Dead album cover"><span>The Smiths</span></button>
+        <button class="album" type="button" data-album="Ultraviolence — Lana Del Rey"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b0/40/b6/b040b6d4-6fae-cfdc-90a1-a9c53ac0fce5/14UMGIM20561.rgb.jpg/600x600bb.jpg" alt="Ultraviolence album cover"><span>Lana</span></button>
+        <button class="album" type="button" data-album="Gish — The Smashing Pumpkins"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ad/6a/ee/ad6aeebf-6c80-fa75-beb3-f52d0bc7768e/19UMGIM59909.rgb.jpg/600x600bb.jpg" alt="Gish album cover"><span>Pumpkins</span></button>
+        <button class="album" type="button" data-album="Grace — Jeff Buckley"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/26/d6/e3/26d6e339-a7a9-d61e-1b5f-0852a5515a55/886445517880.jpg/600x600bb.jpg" alt="Grace album cover"><span>Jeff</span></button>
+      </div>
+      <div class="ticket reveal"><b>ADMIT TWO</b><span>SUNNY DAY REAL ESTATE</span><small>best used with Ronan + Megan</small></div>
+    </section>
+
+    <section class="note scrapbook-page" id="note">
+      <div class="note__decor" aria-hidden="true"><span>✿</span><span>♡</span><span>✦</span><span>☺</span></div>
+      <div class="letter reveal">
+        <span class="tape tape--letter"></span>
+        <p class="letter__date">06 / 19 / forever-ish</p>
+        <h2>hey Megan,</h2>
+        <!-- LOVE NOTE: Keep this in Ronan's voice; edit any line freely. -->
+        <div class="letter__body">
+          <p>I still think it is funny that we met as skate guards. I asked if you were new, we kept talking behind the skate desk, and I noticed your pretty eyes. Apparently you thought I was nerdy and cute, so we both had excellent judgment.</p>
+          <p>My favorite days do not need much: cuddling with you, hanging out with Jada or my dogs, you scratching my hair, and you reminding me that I am handsome. You made it easier for me to trust again.</p>
+          <p>I am proud of your good heart, excited for future hospital-pharmacist Megan, and ready for more dinner dates, Italy, Spain, the lovebird Lego set, and every weird conversation in between.</p>
+          <p>Being with you feels like I found my best friend.</p>
+        </div>
+        <div class="letter__signoff">love you,<strong>Ronan</strong><span>P.S. imma swiss cheese yo ahh ♡</span></div>
+      </div>
+    </section>
+
+    <section class="memory-wall scrapbook-page" id="wall">
+      <header class="section-title reveal">
+        <span class="kicker">this part needs our actual photos!</span>
+        <h2>memory<br><em>wall</em></h2>
+      </header>
+      <div class="polaroid-wall">
+        <!-- OUR PHOTOS: Keep this wall image-only; replace files from photos/us as needed. -->
+        <figure class="wall-photo wall-photo--1 reveal real-photo"><img class="scrapbook-img" src="photos/us/IMG_8834.jpg" alt="Megan leaning against Ronan as he plays guitar"></figure>
+        <figure class="wall-photo wall-photo--2 reveal real-photo"><img class="scrapbook-img" src="photos/us/5044796782055559867.jpg" alt="Ronan holding Megan in matching purple outfits"></figure>
+        <figure class="wall-photo wall-photo--3 reveal real-photo"><img class="scrapbook-img" src="photos/us/IMG_1798.jpg" alt="Close selfie of Ronan and Megan lying together"></figure>
+        <figure class="wall-photo wall-photo--4 reveal real-photo"><img class="scrapbook-img" src="photos/us/4526179349044401123.jpg" alt="Ronan and Megan laughing together"></figure>
+        <figure class="wall-photo wall-photo--5 reveal real-photo"><img class="scrapbook-img" src="photos/us/IMG_8860.jpg" alt="Ronan and Megan holding a green guitar together"></figure>
+        <figure class="wall-photo wall-photo--6 reveal real-photo"><img class="scrapbook-img" src="photos/us/IMG_1799.jpg" alt="Playful close selfie of Ronan and Megan"></figure>
+      </div>
+      <button class="love-button" id="loveButton" type="button">click if you are Megan ♡</button>
+      <p class="final-message" id="finalMessage" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>HANDMADE ON THE INTERNET</span>
+    <b>RONAN ♡ MEGAN</b>
+    <span>EST. 06·19·2025</span>
+  </footer>
+
+  <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

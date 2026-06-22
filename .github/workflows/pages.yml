@@ -1,0 +1,59 @@
+name: Publish scrapbook to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Build the public folder
+        run: |
+          mkdir -p _site/photos/us _site/photos/jada _site/photos/inspiration
+          cp index.html styles.css script.js _site/
+          cp "photos/us/IMG_8860.jpg" _site/photos/us/
+          cp "photos/us/photo.png" _site/photos/us/
+          cp "photos/us/IMG_1381.jpg" _site/photos/us/
+          cp "photos/us/anv.jpg" _site/photos/us/
+          cp "photos/us/4526179349044401123.jpg" _site/photos/us/
+          cp "photos/us/IMG_1799.jpg" _site/photos/us/
+          cp "photos/us/IMG_8834.jpg" _site/photos/us/
+          cp "photos/us/monumnet.jpg" _site/photos/us/
+          cp "photos/us/IMG_1262.jpg" _site/photos/us/
+          cp "photos/us/5044796782055559867.jpg" _site/photos/us/
+          cp "photos/us/IMG_1798.jpg" _site/photos/us/
+          cp "photos/jada/jada.jpg" _site/photos/jada/
+          cp "photos/jada/jada 2.jpg" _site/photos/jada/
+          cp "photos/inspiration/drugdle.png" _site/photos/inspiration/
+          touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
